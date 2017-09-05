@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="" ng-app="plunker">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -17,36 +17,19 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
-  </head>
-  <body>
-    <!--[if IE]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-      </ul>
-    </div>
-    
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    <script>document.write('<base href="' + document.location + '" />');</script>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    
+    <link rel="stylesheet" href="/bower_components/ng-dialog/css/ngDialog.min.css"/>
+    <link rel="stylesheet" href="/bower_components/ng-dialog/css/ngDialog-theme-plain.css" />
+    <script data-require="angular.js@1.3.x" src="/bower_components/angular/angular.min.js" data-semver="1.3.17"></script>
+
+    <script src="/bower_components/ng-dialog/js/ngDialog.js"></script>
+
+  </head>
+    <body ng-controller="MainCtrl">
+    <confirm type="confirm"></confirm>
+
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
