@@ -36,11 +36,7 @@ app.directive('confirm', ['ngDialog', function (ngDialog) {
               '      <button type="button" class="ngdialog-button" ng-click="closeThisDialog()">Cancel</button>' +
               '    </div>' +
               '</div>',
-        }).then(function (confirm) {
-          alert('Confirmed')
-        }, function(reject) {
-          alert('Rejected')
-        });
+        })
       }
     },
     link: function(scope, element, attrs) {
