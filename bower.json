@@ -4,6 +4,7 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^3.5.0"
+    "mocha": "^3.5.0",
+    "ng-dialog": "^1.4.0"
   }
 }
